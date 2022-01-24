@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css"
+      rel="stylesheet"
+    />
+
     <title>Etch-a-Sketch - Game</title>
   </head>
   <body>
@@ -12,16 +17,28 @@
 
     <h1>Etch-a-Sketch</h1>
 
-    <div class="buttons-container">
-      <button class="btn" id="black-btn">Black Mode</button>
-      <button class="btn" id="rainbow-btn">Raibow Mode</button>
-      <button class="btn" id="clear-btn">Clear Grid</button>
-      <button class="btn" id="create-new-grid-btn">Create New Grid</button>
+    <div id="buttons-container">
+      <button class="btn nes-btn" id="black-btn">Black.mode</button>
+      <button class="btn nes-btn is-warning" id="rainbow-btn">
+        Rainbow.mode
+      </button>
+      <button class="btn nes-btn" id="clear-btn">Clear.grid</button>
+      <button class="btn nes-btn" id="create-new-grid-btn">Create.new</button>
     </div>
 
-    <div class="container" id="grid"></div>
-
+    <div
+      class="container nes-container is-rounded with-title"
+      id="outer-grid-container"
+    >
+      <p class="title">Draw here</p>
+      <div id="grid"></div>
+    </div>
     <div id="myModal" class="modal"></div>
+
+    <p>
+      Made with <i class="nes-icon is-small heart"></i> in the Dominican
+      Republic.
+    </p>
 
     <script src="/app.js"></script>
   </body>
