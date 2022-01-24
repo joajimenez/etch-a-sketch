@@ -77,8 +77,12 @@ h6 {
   isolation: isolate;
 }
 
+#title {
+  margin-top: 1rem;
+}
+
 #outer-grid-container {
-  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 #grid {
@@ -90,9 +94,7 @@ h6 {
 }
 
 #buttons-container {
-  padding-bottom: 2rem;
-
-  align-content: space-between;
+  margin-top: 2rem;
 }
 
 .square {
@@ -105,5 +107,7 @@ h6 {
   background-color: black;
 }
 
-.btn {
+footer {
+  margin-top: 2rem;
+  font-size: small;
 }
